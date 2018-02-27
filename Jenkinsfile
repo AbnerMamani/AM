@@ -15,7 +15,8 @@ pipeline {
 				sh './gradlew clean check'
             }
 			post {
-				success {
+				success 
+				{
 				  // publish html
 				  publishHTML target: [
 					  allowMissing: false,
