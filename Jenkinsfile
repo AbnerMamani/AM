@@ -30,7 +30,7 @@ pipeline {
 			}
 			
         }
-        stage('Pachage') {
+        stage('Package') {
             steps {
                 echo 'Deploying....'
 				sh './gradlew clean war'
